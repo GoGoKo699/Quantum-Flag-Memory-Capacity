@@ -26,7 +26,7 @@ The two cases agree because $`f^{-1}(\chi)=r_0`$ and $`f(|z_0|)=h_2(p)`$. This i
 Set $`r=f^{-1}(q)`$ and $`z=\sqrt{r^2-x_0^2}`$. For $`0\lt q\lt \chi`$,
 
 ```math
-C'(q)=1-\frac{A(z)}{A(r)},\qquad A(u)=\frac{\operatorname{atanh}u}{u},\qquad A(0)=1.
+C'(q)=1-\frac{A(z)}{A(r)},\qquad A(u)=\frac{\mathrm{atanh}u}{u},\qquad A(0)=1.
 ```
 
 The function $`A`$ is strictly increasing. Since $`r\gt z`$, the derivative is positive. The function $`v\mapsto\log A(\sqrt v)`$ is strictly convex on $`[0,1)`$ by its integral representation $`A(\sqrt v)=\int_0^1 (1-vt^2)^{-1}\,dt`$ and Hölder's inequality. With $`r^2=z^2+x_0^2`$ this makes the ratio $`A(z)/A(r)`$ strictly increase as $`q`$ increases. Thus $`C`$ is strictly concave below $`\chi`$ and exceeds the straight line from immediate measurement to full-rate storage. The smallest memory rate attaining the unrestricted capacity is exactly $`\chi`$.
