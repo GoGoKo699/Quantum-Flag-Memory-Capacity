@@ -67,7 +67,7 @@ Consequently the fixed-instrument coherent information per use is at most $`1+M/
 
 ### Convexity calculation
 
-Use natural logarithms for this calculation, replacing $`f`$ by $`h=\ln(2)f`$ and measuring both entropy variables in nats. This only rescales the input and output entropy coordinates of $`F`$. Set $`r=h^{-1}(t)`$ and $`z=\sqrt{r^2-x^2}`$. Write $`A(u)=\operatorname{atanh}(u)/u`$ and $`K(u)=A'(u)/u`$, extended to zero by continuity. In the interior,
+Use natural logarithms for this calculation, replacing $`f`$ by $`h=\ln(2)f`$ and measuring both entropy variables in nats. This only rescales the input and output entropy coordinates of $`F`$. Set $`r=h^{-1}(t)`$ and $`z=\sqrt{r^2-x^2}`$. Write $`A(u)=\mathrm{atanh}(u)/u`$ and $`K(u)=A'(u)/u`$, extended to zero by continuity. In the interior,
 
 ```math
 F_t=\frac{A(z)}{A(r)},\qquad
@@ -79,7 +79,7 @@ F_{tt}=\frac{A(z)K(r)-K(z)A(r)}{A(r)^3}.
 Positivity of $`A`$ proves monotonicity. The identity
 
 ```math
-A(z)-(1-z^2)K(z)=\frac{\operatorname{atanh}(z)-z}{z^3}
+A(z)-(1-z^2)K(z)=\frac{\mathrm{atanh}(z)-z}{z^3}
 ```
 
 and $`x^2\le 1-z^2`$ imply $`F_{xx}\gt 0`$. The sign of the Hessian determinant is the sign of $`J(z)-J(r)`$ for

@@ -28,7 +28,7 @@ Choose $`u`$ with $`\theta\lt u\lt 1/2`$. The compressor keeps the subspace of c
 
 ```math
 D_m=\sum_{j=0}^{\lfloor mu\rfloor}\binom mj\le 2^{m h_2(u)},\qquad
-\delta_m=\Pr\{\operatorname{Bin}(m,\theta)\gt \lfloor mu\rfloor\}\le
+\delta_m=\Pr\{\mathrm{Bin}(m,\theta)\gt \lfloor mu\rfloor\}\le
 2^{-m D_2(u\Vert\theta)}.
 ```
 
@@ -51,7 +51,7 @@ M_{x|s,y}=G_{s,y}^{-1/2}A_{x,y}G_{s,y}^{-1/2}.
 The inverse is on the support. The operators $`M_{x|s,y}`$ form a pretty-good measurement there and can be completed arbitrarily on the kernel. Its exact error probability is
 
 ```math
-\epsilon_{\mathrm{PGM}}=1-\sum_{x,y}\operatorname{Tr}
+\epsilon_{\mathrm{PGM}}=1-\sum_{x,y}\mathrm{Tr}
 \bigl(M_{x|Hx,y}A_{x,y}\bigr).
 ```
 
