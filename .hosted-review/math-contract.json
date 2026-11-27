@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 8,
+      "source_sha256": "af98f1627f7f439d50b1fa174742b3d9cf0a15530dc3a76089aab3e526ade797",
+      "expected_text": "\n  C\n  (\n  q\n  )\n  =\n  \n    {\n    \n      \n        \n          \n            1\n            +\n            q\n            −\n            f\n            \n              \n            \n            \n              (\n              \n                \n                  [\n                \n                \n                  f\n                  \n                    −\n                    1\n                  \n                \n                (\n                q\n                )\n                \n                  \n                    ]\n                  \n                  2\n                \n                −\n                \n                  x\n                  0\n                  2\n                \n              \n              )\n            \n            ,\n          \n          \n            0\n            ≤\n            q\n            ≤\n            χ\n            ,\n          \n        \n        \n          \n             \n            1\n            −\n            \n              h\n              2\n            \n            (\n            p\n            )\n            +\n            χ\n            ,\n          \n          \n            q\n            ≥\n            χ\n            .\n          \n        \n      \n    \n    \n  \n"
+    },
+    {
+      "path": "README.md",
+      "index": 10,
+      "source_sha256": "848afea8f88033261dd704e62cc31f7f8d3ff0a50e4688d6b9e189fff2d98eaf",
+      "expected_text": "0<p,c<1"
+    },
+    {
+      "path": "README.md",
+      "index": 19,
+      "source_sha256": "80fda7d56ba88ac6ccd7cb123aa32623d277a85e55413e12191a753461c37595",
+      "expected_text": "0.3803"
+    }
+  ]
+}

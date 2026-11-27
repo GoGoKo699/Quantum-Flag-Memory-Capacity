@@ -21,7 +21,7 @@ jobs:
       - name: Capture the final scientific source
         run: |
           export NODE_PATH="$RUNNER_TEMP/flag-hosted-deps/node_modules"
-          node .hosted-review/capture_hosted_math.cjs --root . --repository GoGoKo699/Quantum-Flag-Memory-Capacity --revision 301821182aa7303d6992a9a79b2fd1a101996230 --output "$RUNNER_TEMP/flag-hosted-evidence"
+          node .hosted-review/capture_hosted_math.cjs --root . --repository GoGoKo699/Quantum-Flag-Memory-Capacity --revision bf468af6629f7febd826d4a25f375e9f97c99a55 --output "$RUNNER_TEMP/flag-hosted-evidence" --contract .hosted-review/math-contract.json
       - name: Save actual hosted evidence
         if: always()
         uses: actions/upload-artifact@v4
