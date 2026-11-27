@@ -1,0 +1,32 @@
+name: Hosted mathematics review
+on:
+  push:
+    branches:
+      - merlin/flag-memory-hosted-checks
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Prepare Playwright and MathJax
+        run: |
+          npm install --prefix "$RUNNER_TEMP/flag-hosted-deps" --no-fund --no-audit playwright@1.56.1 mathjax-full@3.2.1
+          "$RUNNER_TEMP/flag-hosted-deps/node_modules/.bin/playwright" install chromium
+      - name: Capture the final scientific source
+        run: |
+          export NODE_PATH="$RUNNER_TEMP/flag-hosted-deps/node_modules"
+          node .hosted-review/capture_hosted_math.cjs --root . --repository GoGoKo699/Quantum-Flag-Memory-Capacity --revision 301821182aa7303d6992a9a79b2fd1a101996230 --output "$RUNNER_TEMP/flag-hosted-evidence"
+      - name: Save actual hosted evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flag-memory-hosted-evidence
+          path: ${{ runner.temp }}/flag-hosted-evidence
+          if-no-files-found: warn
+          retention-days: 7
