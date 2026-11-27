@@ -4,7 +4,7 @@
 
 The data qubits take a separate path. Before the cut the receiver can jointly process all flag qubits and keep an unlimited classical record plus $`q`$ quantum qubits per channel use. After the cut it receives the noisy data and can extract the syndrome. The model uses calibrated, ideal operations and counts persistent flag memory at the cut.
 
-Let $`f(r)=h_2((1+r)/2)`$, with $`h_2`$ the binary entropy. For phase-error probability $`p`$ and flag overlap $`c`$, put $`x_0=2csqrt{p(1-p)}`$ and $`chi=f(sqrt{x_0^2+(1-2p)^2})`$.
+Let $`f(r)=h_2((1+r)/2)`$, with $`h_2`$ the binary entropy. For phase-error probability $`p`$ and flag overlap $`c`$, put $`x_0=2c\sqrt{p(1-p)}`$ and $`\chi=f(\sqrt{x_0^2+(1-2p)^2})`$.
 
 ```math
 C(q)=
@@ -14,7 +14,7 @@ C(q)=
 \end{cases}
 ```
 
-Here $`C(q)`$ counts logical qubits per channel use at vanishing error. For $`0lt p,clt1`$, the rate rises strictly up to $`chi`$, and every interior point improves on time-sharing between the two endpoint receivers.
+Here $`C(q)`$ counts logical qubits per channel use at vanishing error. For $`0\lt p,c\lt 1`$, the rate rises strictly up to $`\chi`$, and every interior point improves on time-sharing between the two endpoint receivers.
 
 | Strategy at $`p=1/2`$ and $`c=0.8`$ | Retained flag qubits per use | Logical qubits per use |
 | --- | ---: | ---: |
