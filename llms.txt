@@ -1,0 +1,19 @@
+# Quantum Flag Memory Capacity
+
+> Exact reliable quantum communication rates for independent Pauli phase errors with nonorthogonal pure-state flags and a hard budget for persistent flag memory.
+
+## Science
+
+- [Channel and timing model](science/model.md)
+- [Capacity and binary entropy optimization](science/capacity.md)
+- [Converse for arbitrary early joint processing](science/converse.md)
+- [Achieving the curve](science/achievability.md)
+- [Finite-block resources](science/finite-block.md)
+- [Scientific attribution and comparisons](science/related-work.md)
+
+## Learning and verification
+
+- [Learning guide](learning/README.md)
+- [Watrous bridge](learning/WATROUS_BRIDGE.md)
+- [Thirty milestones](learning/MILESTONES.md)
+- [Reproduce the checks](verification/README.md)
